@@ -41,7 +41,7 @@ public class BackgroundPar : MonoBehaviour
 			float backgroundTargetPosY = backgrounds[i].position.y + parallaxY * (i * parallaxReductionFactor + 1);
 			
 			// Create a target position which is the background's current position but with it's target x position.
-			Vector3 backgroundTargetPos = new Vector3(backgroundTargetPosX, backgroundTargetPosY, i);
+            Vector3 backgroundTargetPos = new Vector3(backgrounds[i].position.x, backgrounds[i].position.y, i);
 			
 			// Lerp the background's position between itself and it's target position.
 			backgrounds[i].position = Vector3.Lerp(backgrounds[i].position, backgroundTargetPos, smoothing * Time.deltaTime);
