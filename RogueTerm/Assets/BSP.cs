@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class BSP  {
 
-    public int MIN_LEAF_SIZE = 5;
+    public int MIN_LEAF_SIZE = 10;
     public int x, y, width, height;
     public BSP leftChild;
     public BSP rightChild;
